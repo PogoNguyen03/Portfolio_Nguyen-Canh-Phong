@@ -30,3 +30,9 @@ function typeEffect() {
 }
 
 document.addEventListener("DOMContentLoaded", typeEffect);
+
+
+// JavaScript để toggle class "active" cho navbar
+document.getElementById("menu-icon").addEventListener("click", function() {
+    document.querySelector(".navbar").classList.toggle("active");
+});
