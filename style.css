@@ -54,6 +54,24 @@ html::-webkit-scrollbar-thumb{
     z-index: 100;
 }
 
+@media (max-width: 768px) {
+    .header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 3rem 9%;
+        background: rgba(0, 0, 0, 0.7);
+        filter: drop-shadow(10px);
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        z-index: 100;
+    }
+}
+
+
+
 .logo{
     font-size: 3rem;
     color: var(--main-color);
