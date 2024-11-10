@@ -315,7 +315,7 @@ span{
 
 .services-box{
     background-color: var(--main-color);
-    height: 300px;
+    height: 250px;
     border-radius: 3rem;
     margin: 10px;
     cursor: pointer;
@@ -601,6 +601,65 @@ span{
 }
 
 /* Contact section */
+
+.contact-section {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-info {
+    display: flex;
+    gap: 40px; /* Khoảng cách giữa các info-item */
+}
+
+.info-item {
+    background-color: #831dff64;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 1;
+    max-width: 300px; /* Giới hạn chiều rộng */
+}
+
+.info-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.info-item i {
+    font-size: 32px;
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
+
+.info-item h4 {
+    font-size: 20px;
+    color: var(--text-color);
+    margin-bottom: 8px;
+}
+
+.info-item p {
+    font-size: 16px;
+    line-height: 2.5rem;
+    color: var(--text-color);
+}
+
+@media (max-width: 768px) {
+    .contact-info {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+
 .contact h2{
     margin-bottom: 3rem;
     color: white;
@@ -835,3 +894,4 @@ footer .copyright{
     transform: translateY(0);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
 }
+
