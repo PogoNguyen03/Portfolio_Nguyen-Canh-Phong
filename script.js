@@ -36,3 +36,20 @@ document.addEventListener("DOMContentLoaded", typeEffect);
 document.getElementById("menu-icon").addEventListener("click", function() {
     document.querySelector(".navbar").classList.toggle("active");
 });
+
+//chuyển động trong services page
+let slideIndex = 0;
+
+function showSlides() {
+    let slides = document.querySelectorAll(".slides");
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    slides[slideIndex-1].style.display = "block";  
+    slides[slideIndex-1].classList.add('fade');
+    setTimeout(showSlides, 3000); // Chuyển slide sau mỗi 3 giây
+}
+
+showSlides(); // Bắt đầu slideshow khi trang web tải

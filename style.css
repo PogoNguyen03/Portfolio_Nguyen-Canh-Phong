@@ -49,7 +49,7 @@ html::-webkit-scrollbar-thumb{
     background: rgba(0, 0, 0, 0.7);
     filter: drop-shadow(10px);
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     z-index: 100;
 }
@@ -69,7 +69,7 @@ html::-webkit-scrollbar-thumb{
 .navbar a{
     font-size: 1.8rem;
     color: var(--text-color);
-    margin-left: 4rem;
+    margin-left: 7rem;
     font-weight: 500;
     transition: 0.3s ease;
     border-bottom: 3px solid transparent;
@@ -301,6 +301,17 @@ span{
     align-items: center;
     grid: 2.5rem;
 }
+
+.services-link {
+    text-decoration: none;
+    color: var(--text-color); 
+    display: block;
+}
+
+.services-link:visited {
+    color: var(--text-color); 
+}
+
 
 .services-box{
     background-color: var(--main-color);
@@ -722,3 +733,105 @@ footer .copyright{
     }
 }
 
+/*services page*/
+.intro-section {
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.content-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.media-column {
+    flex: 5 5 0;
+}
+
+.text-column {
+    flex: 7 7 0;
+}
+
+.media-column img,
+.media-column video {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.text-column h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: var(--main-color);
+}
+
+.text-column p {
+    font-size: 2.5rem;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.text-column p a{
+    text-decoration: none;
+    color: var(--main-color); 
+    display: block;
+}
+.text-column p a:visited{
+    color: var(--main-color);
+}
+
+
+/* Giới thiệu container slideshow */
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px; /* Điều chỉnh kích thước tối đa cho slideshow */
+    margin: 0 auto; /* Canh giữa slideshow */
+}
+
+.slides {
+    display: none; /* Ẩn tất cả các hình ảnh trong slideshow */
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Thêm hiệu ứng chuyển động mượt mà */
+.fade {
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+@keyframes fade {
+    from { opacity: 0.4 }
+    to { opacity: 1 }
+}
+
+/*button visit code*/
+.custom-button {
+    display: inline-block;
+    padding: 12px 24px;
+    margin-top: 2rem;
+    background-color: var(--main-color);
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px; /* Bo góc */
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.custom-button:hover {
+    background-color: var(--main-color);
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.custom-button:active {
+    transform: translateY(0);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
