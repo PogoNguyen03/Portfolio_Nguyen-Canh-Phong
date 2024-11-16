@@ -149,7 +149,7 @@ html::-webkit-scrollbar-thumb{
 }
 
 section{
-    /* min-height: 100vh; */
+    min-height: 80vh;
     padding: 10rem 9% 5rem;
 }
 
